@@ -1,4 +1,5 @@
 module.exports = eleventyConfig => {
+  eleventyConfig.setUseGitIgnore(false);
 
   /**
    * Not sure if this is actually needed :)
@@ -12,6 +13,7 @@ module.exports = eleventyConfig => {
    * subpages.
    */
   eleventyConfig.ignores.add("content/**/*.(png|jpg|webp|avif).md");
+  eleventyConfig.ignores.add("content/assets/assets.md");
 
   /**
    * The permalink feature is used to rewrite Kirby’s folders.
